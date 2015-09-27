@@ -50,6 +50,7 @@ public class SettingsDialog extends DialogFragment {
         super.onCreate(savedInstanceState);
         View view = inflater.inflate(R.layout.settings_dialog, container);
 
+
         settings = getArguments().getParcelable("settingsData");
 
         spSize  = (Spinner) view.findViewById(R.id.spSize);
@@ -125,7 +126,7 @@ public class SettingsDialog extends DialogFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setStyle(DialogFragment.STYLE_NO_TITLE, 0);
+        setStyle(DialogFragment.STYLE_NO_TITLE, 0);
     }
 
 }
